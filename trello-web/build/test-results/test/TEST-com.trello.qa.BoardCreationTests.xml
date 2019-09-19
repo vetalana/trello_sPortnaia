@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.trello.qa.BoardCreationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-09-19T20:25:47" hostname="DESKTOP-7T33ROT" time="8.455">
+  <properties/>
+  <testcase name="testBoardCreationFromPlusButtonOnHeader" classname="com.trello.qa.BoardCreationTests" time="8.455"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 76.0.3809.68 (420c9498db8ce8fcd190a954d51297672c1515d5-refs/branch-heads/3809@{#864}) on port 34096
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1568924734.668][WARNING]: Timed out connecting to Chrome, retrying...
+Sep 19, 2019 11:25:36 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1568924738.818][WARNING]: Timed out connecting to Chrome, retrying...
+]]></system-err>
+</testsuite>
