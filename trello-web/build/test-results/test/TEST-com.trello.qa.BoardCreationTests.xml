@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.trello.qa.BoardCreationTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-09-21T07:54:30" hostname="DESKTOP-7T33ROT" time="224.425">
+<testsuite name="com.trello.qa.BoardCreationTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-09-21T08:09:06" hostname="DESKTOP-7T33ROT" time="224.17">
   <properties/>
-  <testcase name="testBoardCreationFromBoardButtonOnLeftHeader" classname="com.trello.qa.BoardCreationTests" time="112.269"/>
-  <testcase name="testBoardCreationFromPlusButtonOnHeader" classname="com.trello.qa.BoardCreationTests" time="112.149"/>
+  <testcase name="testBoardCreationFromBoardButtonOnLeftHeader" classname="com.trello.qa.BoardCreationTests" time="112.04"/>
+  <testcase name="testBoardCreationFromPlusButtonOnHeader" classname="com.trello.qa.BoardCreationTests" time="112.121"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 76.0.3809.68 (420c9498db8ce8fcd190a954d51297672c1515d5-refs/branch-heads/3809@{#864}) on port 26561
+  <system-err><![CDATA[Starting ChromeDriver 76.0.3809.68 (420c9498db8ce8fcd190a954d51297672c1515d5-refs/branch-heads/3809@{#864}) on port 14083
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-[1569052458.081][WARNING]: Timed out connecting to Chrome, retrying...
-Sep 21, 2019 10:54:20 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1569053332.127][WARNING]: Timed out connecting to Chrome, retrying...
+Sep 21, 2019 11:08:54 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-[1569052462.210][WARNING]: Timed out connecting to Chrome, retrying...
+[1569053336.257][WARNING]: Timed out connecting to Chrome, retrying...
 ]]></system-err>
 </testsuite>

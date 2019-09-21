@@ -34,7 +34,7 @@ public class BoardCreationTests extends TestBase {
         returnToHomePage();
         Thread.sleep(20000);
         int NumberOfBoardsAfterCreation = getPersonalBoardsCount();
-
+        Assert.assertEquals(NumberOfBoardsAfterCreation, NumberOfBoardsBeforeCreation + 1);
 
     }
 
