@@ -127,4 +127,8 @@ public class TestBase {
     Thread.sleep(20000);
     return driver.findElements(By.xpath("//*[@class='icon-lg icon-member']/../../..//li")).size() - 1;
 }
+
+    public String getTeamNameFromTeamPage() {
+        return driver.findElement(By.cssSelector("h1")).getText();
+    }
 }
