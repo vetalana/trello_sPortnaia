@@ -85,16 +85,46 @@ public class TestBase {
         click(By.cssSelector("[data-test-id='header-create-board-button']"));
     }
 
-    public void fillInBoardCreationForm(String boardName, String description_qa21) {
+    public void fillInBoardCreationForm(String boardName) throws InterruptedException {
         type(By.cssSelector("[data-test-id='header-create-board-title-input']"), boardName);
         if (isElementPresent(By.cssSelector(".W6rMLOx8U0MrPx"))) {
+            Thread.sleep(5000);
             click(By.cssSelector(".W6rMLOx8U0MrPx"));
+            Thread.sleep(5000);
             click(By.xpath("//nav[@class='SdlcRrTVPA8Y3K']//li[1]"));// no team
         }
+
 
     }
 
     public void clickConfirmBoardCreationButton() {
         click(By.cssSelector("[data-test-id='header-create-board-submit-button']"));
     }
+
+    public void selectCreateNewBoardFromDropDown() {
+        driver.findElement(By.cssSelector("[data-test-id='header-boards-menu-create-board']")).click();
+
+    }
+
+    public void clickOnBoardButtonOnLeftHeader() {
+        driver.findElement(By.cssSelector("[data-test-id='header-boards-menu-button']")).click();
+    }
+
+    public void returnToHomePage() throws InterruptedException {
+        Thread.sleep(10000);
+        click(By.cssSelector("a[href='/']"));
+    }
+
+    public int getTeamsCount() throws InterruptedException {
+        Thread.sleep(10000);
+        return driver.findElements(By.xpath("//div[@class='_mtkwfAlvk6O3f']/../../..//li")).size();
+    }
+
+    public void clickXButton() {
+    }
+
+    public int getPersonalBoardsCount() throws InterruptedException {
+    Thread.sleep(20000);
+    return driver.findElements(By.xpath("//*[@class='icon-lg icon-member']/../../..//li")).size() - 1;
+}
 }
