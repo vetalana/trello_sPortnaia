@@ -2,9 +2,27 @@ package com.trello.qa;
 
 import org.openqa.selenium.By;
 import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class TeamCreationTests extends TestBase {
+    @BeforeClass
+    public void ensurePreconditions(){
+        if(!isUserLoggedIn()){
+            logIn("svetlana.portnaia@gmail.com", "196819651968s");
+        }
+    }
+
+    @BeforeMethod
+    public void isOnHomePage(){
+        if(!isTherePersonalBoard()){
+            returnToHomePage();
+                 }
+    }
+    public boolean isTherePersonalBoard() {
+        return isElementPresent(By.xpath("//*[@class='icon-lg icon-member']/../../.."));
+    }
     @Test
     public void testTeamCreationFromPlusButtonOnHeader() throws InterruptedException {
         int before = getTeamsCount();
@@ -32,13 +50,10 @@ public class TeamCreationTests extends TestBase {
         String createdTeamName=getTeamNameFromTeamPage();
 
         returnToHomePage();
+        refreshPage();
         int after=getTeamsCount();
         Assert.assertEquals(after, before+1);
         Assert.assertEquals(createdTeamName.toLowerCase(), teamName.toLowerCase());
-    }
-
-    public void clickOnPlusButtonOnLeftNavMenu() {
-        click(By.cssSelector(".icon-add.icon-sm"));
     }
 
 
