@@ -1,5 +1,6 @@
 package com.trello.qa;
 
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -20,7 +21,9 @@ public class BoardCreationTests extends TestBase {
         }
 
     }
-
+    public boolean isTherePersonalBoard() {
+        return isElementPresent(By.xpath("//*[@class='icon-lg icon-member']/../../.."));
+    }
 
     @Test
     public void testBoardCreationFromBoardButtonOnLeftHeader() throws InterruptedException {

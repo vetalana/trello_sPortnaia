@@ -48,7 +48,7 @@ public class TestBase {
     }
 
     @AfterClass
-    public void tearDown() {
+    public void tearDown() throws InterruptedException {
         driver.quit();
 
     }
