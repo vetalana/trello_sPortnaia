@@ -9,7 +9,7 @@ public class BoardCreationTests extends TestBase {
         int beforeCreation = app.getBoardHelper().getPersnalBoardsCount();
         app.getBoardHelper().clickOnPlusButtonOnHeader();
         app.getBoardHelper().selectCreateBoardFromDropDown();
-        app.getBoardHelper().fillBoardCreationForm("qa21", "descr qa 21");
+        app.getBoardHelper().fillBoardCreationForm("Happiness", "Happy");
         app.getBoardHelper().confirmBoardCreation();
         app.getBoardHelper().returnToHomePage();
 

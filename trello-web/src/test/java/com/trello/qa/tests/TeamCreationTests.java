@@ -1,5 +1,6 @@
 package com.trello.qa.tests;
 
+import com.trello.qa.manager.TeamData;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeMethod;
@@ -18,8 +19,8 @@ public class TeamCreationTests extends TestBase {
         int before = app.getTeamHelper().getTeamsCount();
         app.getTeamHelper().clickOnPlusButtonOnHeader();
         app.getTeamHelper().selectCreateTeamFromDropDown();
-        String teamName = "qa21-" + System.currentTimeMillis();
-        app.getTeamHelper().fillTeamCreationForm(teamName, "descr qa 21");
+        String teamName = "Joy" + System.currentTimeMillis();
+        app.getTeamHelper().fillTeamCreationForm(new TeamData(teamName, "smile"));
         app.getTeamHelper().clickContinueButton();
         //  String createdTeamName = getTeamNameFromTeamPage();
         app.getTeamHelper().returnToHomePage();
@@ -32,7 +33,7 @@ public class TeamCreationTests extends TestBase {
     public void testTeamCreationFromLeftNavMenu() throws InterruptedException {
         int before = app.getTeamHelper().getTeamsCount();
         app.getTeamHelper().clickOnPlusButtonOnLeftNavMenu();
-        app.getTeamHelper().fillTeamCreationForm("h", "g");
+        app.getTeamHelper().fillTeamCreationForm(new TeamData("h", "g"));
         app.getTeamHelper().clickContinueButton();
         String createdTeamName = app.getTeamHelper().getTeamNameFromTeamPage();
         app.getTeamHelper().returnToHomePage();
@@ -47,7 +48,7 @@ public class TeamCreationTests extends TestBase {
     public void testTeamCuncellCreationFromPlusButtonOnHeader() throws InterruptedException {
         app.getTeamHelper().clickOnPlusButtonOnHeader();
         app.getTeamHelper().selectCreateTeamFromDropDown();
-        app.getTeamHelper().fillTeamCreationForm("qa21", "descr qa 21");
+        app.getTeamHelper().fillTeamCreationForm(new TeamData("qa21", "descr qa 21"));
         app.getTeamHelper().clickXButton();
 
         //Assert
