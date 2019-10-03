@@ -1,5 +1,6 @@
 package com.trello.qa.manager;
 
+import com.trello.qa.model.TeamData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -25,13 +26,13 @@ public class TeamHelper extends HelperBase {
     }
 
     public String getTeamNameFromTeamPage() {
-        new WebDriverWait(driver, 20)
-                .until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("h1")));
+        //new WebDriverWait(driver, 25)
+              //  .until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("h1")));
         return driver.findElement(By.cssSelector("h1")).getText();
     }
 
     public int getTeamsCount() {
-        new WebDriverWait(driver, 5)
+        new WebDriverWait(driver, 25)
                 .until(ExpectedConditions.presenceOfElementLocated(
                         By.xpath("//*[@class='_mtkwfAlvk6O3f']/../../..//li")));
         return driver.findElements(By.xpath("//*[@class='_mtkwfAlvk6O3f']/../../..//li")).size();
@@ -43,7 +44,7 @@ public class TeamHelper extends HelperBase {
 
     public void openSettings() throws InterruptedException {
         //waitForElementAndClick(By.xpath("//*[@class='icon-gear icon-sm OiX3P2i2J92Xat']/../../.."), 20);
-        Thread.sleep(5000);
+        Thread.sleep(10000);
         //click(By.xpath("//*[@class='icon-gear icon-sm OiX3P2i2J92Xat']/../../.."));
         click(By.cssSelector("ul .icon-gear.icon-sm"));
         //   click(By.cssSelector("[href$=account]"));
@@ -74,10 +75,10 @@ public class TeamHelper extends HelperBase {
             clickOnFirstTeam();
             openSettings();
             deleteTeam();
-            // returnToHomePage();
+            returnToHomePage();
             refreshPage();
             count = getTeamsCount();
-            System.out.println(count);
+            System.out.println("New Teams Count=" + count);
         }
     }
 
@@ -94,5 +95,20 @@ public class TeamHelper extends HelperBase {
     public void confirmEditTeam() {
         click(By.cssSelector(".js-submit-profile"));
 
+    }
+
+    public boolean isTeamsPresent() {
+        return getTeamsCount()>0;
+    }
+
+    public void createTeam() {
+        clickOnPlusButtonOnHeader();
+        selectCreateTeamFromDropDown();
+        fillTeamCreationForm
+                (new TeamData()
+                        .withTeamName("qa21-")
+                        .withDescription("descr qa 21"));
+        clickContinueButton();
+        returnToHomePage();
     }
 }

@@ -28,11 +28,7 @@ public class ApplicationManager{
         if(browser.equals(BrowserType.FIREFOX)){
             driver=new FirefoxDriver();
         }
-//        if(browser.equals(BrowserType.CHROME)){
-//            driver=new InternetExplorerDriver();
-//        }
-        //driver = new ChromeDriver();
-       // driver=new FirefoxDriver();
+
         driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
         driver.manage().window().maximize();
         teamHelper=new TeamHelper(driver);
