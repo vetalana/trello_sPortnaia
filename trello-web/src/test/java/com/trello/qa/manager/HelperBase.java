@@ -36,7 +36,7 @@ public class HelperBase {
 
     public void clickOnPlusButtonOnHeader() {
         waitForElementAndClick(By.
-                cssSelector("[data-test-id='header-create-menu-button']"), 25);
+                cssSelector("[data-test-id='header-create-menu-button']"), 35);
     }
 
     public void returnToHomePage() {

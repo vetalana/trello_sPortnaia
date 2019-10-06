@@ -30,7 +30,8 @@ public class BoardHelper extends HelperBase{
         waitForElementAndClick(By.cssSelector("[data-test-id='header-create-board-submit-button']"), 20);
     }
 
-    public int getPersnalBoardsCount() {
+    public int getPersnalBoardsCount() throws InterruptedException {
+        Thread.sleep(10000);
         return driver.findElements(By.xpath("//*[@class='icon-lg icon-member']/../../..//li")).size() - 1;
     }
 
