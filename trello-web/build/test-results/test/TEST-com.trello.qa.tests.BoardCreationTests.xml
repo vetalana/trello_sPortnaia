@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.trello.qa.tests.BoardCreationTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-07T16:33:31" hostname="DESKTOP-7T33ROT" time="87.611">
+  <properties/>
+  <testcase name="testBoardCreation" classname="com.trello.qa.tests.BoardCreationTests" time="37.743"/>
+  <testcase name="testBoardCreationDataProvider[0](NAme1)" classname="com.trello.qa.tests.BoardCreationTests" time="24.73"/>
+  <testcase name="testBoardCreationDataProvider[1](777)" classname="com.trello.qa.tests.BoardCreationTests" time="25.115"/>
+  <system-out><![CDATA[19:33:31.812 [Test worker] INFO  c.trello.qa.tests.BoardCreationTests - start test testBoardCreation
+19:33:31.820 [Test worker] INFO  c.trello.qa.tests.BoardCreationTests - start test BoardCreationTests
+19:34:09.566 [Test worker] INFO  c.trello.qa.tests.BoardCreationTests - stop test BoardCreationTests
+================================================
+19:34:09.567 [Test worker] INFO  c.trello.qa.tests.BoardCreationTests - stop test testBoardCreation
+================================================
+19:34:09.576 [Test worker] INFO  c.trello.qa.tests.BoardCreationTests - start test testBoardCreationDataProvider
+19:34:09.577 [Test worker] INFO  c.trello.qa.tests.BoardCreationTests - start test BoardCreationTests
+19:34:34.310 [Test worker] INFO  c.trello.qa.tests.BoardCreationTests - stop test BoardCreationTests
+================================================
+19:34:34.313 [Test worker] INFO  c.trello.qa.tests.BoardCreationTests - stop test testBoardCreationDataProvider
+================================================
+19:34:34.314 [Test worker] INFO  c.trello.qa.tests.BoardCreationTests - start test testBoardCreationDataProvider
+19:34:34.315 [Test worker] INFO  c.trello.qa.tests.BoardCreationTests - start test BoardCreationTests
+19:34:59.432 [Test worker] INFO  c.trello.qa.tests.BoardCreationTests - stop test BoardCreationTests
+================================================
+19:34:59.434 [Test worker] INFO  c.trello.qa.tests.BoardCreationTests - stop test testBoardCreationDataProvider
+================================================
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

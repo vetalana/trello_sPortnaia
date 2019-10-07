@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.trello.qa.tests.BoardModificationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-10-07T16:34:59" hostname="DESKTOP-7T33ROT" time="61.251">
+  <properties/>
+  <testcase name="changeBoardName" classname="com.trello.qa.tests.BoardModificationTests" time="61.251"/>
+  <system-out><![CDATA[19:34:59.437 [Test worker] INFO  c.trello.qa.tests.BoardCreationTests - start test changeBoardName
+19:36:00.740 [Test worker] INFO  c.trello.qa.tests.BoardCreationTests - stop test changeBoardName
+================================================
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

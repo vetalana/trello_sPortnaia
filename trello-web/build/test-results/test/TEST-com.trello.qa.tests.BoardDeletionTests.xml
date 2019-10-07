@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.trello.qa.tests.BoardDeletionTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-10-07T15:15:40" hostname="DESKTOP-7T33ROT" time="87.623">
+<testsuite name="com.trello.qa.tests.BoardDeletionTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-10-07T16:36:00" hostname="DESKTOP-7T33ROT" time="87.561">
   <properties/>
-  <testcase name="deletionBoardTest" classname="com.trello.qa.tests.BoardDeletionTests" time="87.623"/>
-  <system-out><![CDATA[hidden
+  <testcase name="deletionBoardTest" classname="com.trello.qa.tests.BoardDeletionTests" time="87.561"/>
+  <system-out><![CDATA[19:36:00.749 [Test worker] INFO  c.trello.qa.tests.BoardCreationTests - start test deletionBoardTest
+hidden
+19:37:28.358 [Test worker] INFO  c.trello.qa.tests.BoardCreationTests - stop test deletionBoardTest
+================================================
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
