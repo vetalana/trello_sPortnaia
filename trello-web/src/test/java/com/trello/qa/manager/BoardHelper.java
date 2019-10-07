@@ -49,7 +49,8 @@ public class BoardHelper extends HelperBase{
 
     }
 
-    public void clickOnFirstPrivateBoard() {
+    public void clickOnFirstPrivateBoard() throws InterruptedException {
+        Thread.sleep(5000);
         click(By.xpath("//*[@class='icon-lg icon-member']/../../..//li"));
     }
 
@@ -86,7 +87,8 @@ public class BoardHelper extends HelperBase{
 
     public void changeBoardName(String newName) {
         //mouse focus:
-        driver.findElement(By.cssSelector(".js-rename-board")).click();
+       driver.findElement(By.cssSelector(".js-rename-board")).click();
+
         driver.findElement(By.cssSelector("input.js-board-name-input")).sendKeys(newName);
         returnToHomePage();
     }

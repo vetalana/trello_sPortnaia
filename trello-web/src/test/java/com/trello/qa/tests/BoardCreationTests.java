@@ -15,14 +15,14 @@ public class BoardCreationTests extends TestBase {
         List<Object[]> listBoards = new ArrayList<>();
         listBoards.add(new Object[]{"NAme1"});
         listBoards.add(new Object[]{"777"});
-        listBoards.add(new Object[]{"про это"});
-        listBoards.add(new Object[]{"@#$%^"});
+       // listBoards.add(new Object[]{"про_это"});
+       // listBoards.add(new Object[]{"@#$%^"});
 
         return listBoards.listIterator();
     }
 
     @Test(dataProvider = "validBoards")
-    public void testBoardCreationDataProvider(String boardName) {
+    public void testBoardCreationDataProvider(String boardName) throws InterruptedException {
         int beforeCreation = app.getBoardHelper().getPersnalBoardsCount();
         app.getBoardHelper().clickOnPlusButtonOnHeader();
         app.getBoardHelper().selectCreateBoardFromDropDown();
@@ -37,7 +37,7 @@ public class BoardCreationTests extends TestBase {
     }
 
     @Test
-    public void testBoardCreation() {
+    public void testBoardCreation() throws InterruptedException {
         int beforeCreation = app.getBoardHelper().getPersnalBoardsCount();
         app.getBoardHelper().clickOnPlusButtonOnHeader();
         app.getBoardHelper().selectCreateBoardFromDropDown();

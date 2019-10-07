@@ -44,7 +44,7 @@ public class TeamHelper extends HelperBase {
 
     public void openSettings() throws InterruptedException {
         //waitForElementAndClick(By.xpath("//*[@class='icon-gear icon-sm OiX3P2i2J92Xat']/../../.."), 20);
-        Thread.sleep(10000);
+        Thread.sleep(20000);
         //click(By.xpath("//*[@class='icon-gear icon-sm OiX3P2i2J92Xat']/../../.."));
         click(By.cssSelector("ul .icon-gear.icon-sm"));
         //   click(By.cssSelector("[href$=account]"));
@@ -110,5 +110,9 @@ public class TeamHelper extends HelperBase {
                         .withDescription("descr qa 21"));
         clickContinueButton();
         returnToHomePage();
+    }
+
+    public void clickOnCloseNotNormalWindow() {
+        click(By.cssSelector("._2b_HpRl1Tyl1YK"));
     }
 }
