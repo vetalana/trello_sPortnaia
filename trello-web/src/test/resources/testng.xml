@@ -8,6 +8,7 @@
             <class name="com.trello.qa.tests.BoardCreationTests"/>
             <class name="com.trello.qa.tests.BoardModificationTests"/>
             <class name="com.trello.qa.tests.BoardDeletionTests"/>
+            <class name="com.trello.qa.tests.UserModificationTests"/>
 
 
 

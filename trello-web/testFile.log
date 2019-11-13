@@ -1,0 +1,16 @@
+18115 [Test worker] INFO  c.t.qa.tests.BoardCreationTests - start test testBoardCreation
+18119 [Test worker] INFO  c.t.qa.tests.BoardCreationTests - start test BoardCreationTests
+54399 [Test worker] INFO  c.t.qa.tests.BoardCreationTests - stop test BoardCreationTests
+54400 [Test worker] INFO  c.t.qa.tests.BoardCreationTests - stop test testBoardCreation
+54407 [Test worker] INFO  c.t.qa.tests.BoardCreationTests - start test testBoardCreationDataProvider
+54408 [Test worker] INFO  c.t.qa.tests.BoardCreationTests - start test BoardCreationTests
+78815 [Test worker] INFO  c.t.qa.tests.BoardCreationTests - stop test BoardCreationTests
+78816 [Test worker] INFO  c.t.qa.tests.BoardCreationTests - stop test testBoardCreationDataProvider
+78824 [Test worker] INFO  c.t.qa.tests.BoardCreationTests - start test testBoardCreationDataProvider
+78824 [Test worker] INFO  c.t.qa.tests.BoardCreationTests - start test BoardCreationTests
+102994 [Test worker] INFO  c.t.qa.tests.BoardCreationTests - stop test BoardCreationTests
+102995 [Test worker] INFO  c.t.qa.tests.BoardCreationTests - stop test testBoardCreationDataProvider
+102998 [Test worker] INFO  c.t.qa.tests.BoardCreationTests - start test changeBoardName
+164196 [Test worker] INFO  c.t.qa.tests.BoardCreationTests - stop test changeBoardName
+164200 [Test worker] INFO  c.t.qa.tests.BoardCreationTests - start test deletionBoardTest
+251722 [Test worker] INFO  c.t.qa.tests.BoardCreationTests - stop test deletionBoardTest

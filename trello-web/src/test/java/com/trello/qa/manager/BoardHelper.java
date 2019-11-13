@@ -52,6 +52,7 @@ public class BoardHelper extends HelperBase{
     public void clickOnFirstPrivateBoard() throws InterruptedException {
         Thread.sleep(5000);
         click(By.xpath("//*[@class='icon-lg icon-member']/../../..//li"));
+        takeScreenShot();
     }
 
     public void initBoardDeletion() {

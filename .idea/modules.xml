@@ -2,6 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SPB.trello-web.main.iml" filepath="$PROJECT_DIR$/.idea/modules/SPB.trello-web.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SPB.trello-web.test.iml" filepath="$PROJECT_DIR$/.idea/modules/SPB.trello-web.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/qa21.trello-mob.main.iml" filepath="$PROJECT_DIR$/.idea/modules/qa21.trello-mob.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/qa21.trello-mob.test.iml" filepath="$PROJECT_DIR$/.idea/modules/qa21.trello-mob.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/trello-mob.iml" filepath="$PROJECT_DIR$/.idea/modules/trello-mob.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/trello-mob.main.iml" filepath="$PROJECT_DIR$/.idea/modules/trello-mob.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/trello-mob.test.iml" filepath="$PROJECT_DIR$/.idea/modules/trello-mob.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/trello-web.iml" filepath="$PROJECT_DIR$/.idea/modules/trello-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/trello-web.main.iml" filepath="$PROJECT_DIR$/.idea/modules/trello-web.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/trello-web.test.iml" filepath="$PROJECT_DIR$/.idea/modules/trello-web.test.iml" />

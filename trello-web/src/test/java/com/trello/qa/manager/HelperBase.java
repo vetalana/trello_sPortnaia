@@ -1,10 +1,16 @@
 package com.trello.qa.manager;
 
+import com.google.common.io.Files;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeMethod;
+
+import java.io.File;
+import java.io.IOException;
 
 public class HelperBase {
 
@@ -24,11 +30,12 @@ public class HelperBase {
     }
 
     public void type(By locator, String text) {
-        if(text!=null){
-        driver.findElement(locator).click();
-        driver.findElement(locator).clear();
-        driver.findElement(locator).sendKeys(text);
-    }}
+        if (text != null) {
+            driver.findElement(locator).click();
+            driver.findElement(locator).clear();
+            driver.findElement(locator).sendKeys(text);
+        }
+    }
 
     public boolean isElementPresent(By locator) {
         return driver.findElements(locator).size() > 0;
@@ -55,14 +62,27 @@ public class HelperBase {
             returnToHomePage();
         }
     }
+
     public boolean isTherePersonalBoards() {
         return isElementPresent(By.xpath("//*[@class='icon-lg icon-member']/../../.."));
     }
+
     public void refreshPage() {
         driver.navigate().refresh();
     }
 
     public void clickOnPlusButtonOnLeftNavMenu() {
         click(By.cssSelector(".icon-add.icon-sm"));
+    }
+
+    public void takeScreenShot() {
+        File tmp = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);// sneali screen short
+        File screen = new File("src/test/resources/Screenshots/screen" + System.currentTimeMillis() + ".png");
+
+        try {
+            Files.copy(tmp, screen);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
